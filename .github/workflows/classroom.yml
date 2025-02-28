@@ -14,11 +14,8 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
       with:
-            node-version: 16
-     
-      
-    - name: Backend List Teachers
-    
+            Node-version: 16.20.2     
+    - name: Backend List Teachers    
       id: backend-list-teachers
       uses: classroom-resources/autograding-command-grader@v1
       with:
