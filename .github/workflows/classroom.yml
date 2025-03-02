@@ -11,12 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     if: github.actor != 'github-classroom[bot]'
     steps:
-    - name: Checkout code
+    - name: Checkout code      
       uses: actions/checkout@v4
-     
-      
-    - name: Backend List Teachers
-    
+      with:
+            node-version: 21
+        
+    - name: Backend List Teachers    
       id: backend-list-teachers
       uses: classroom-resources/autograding-command-grader@v1
       with:
