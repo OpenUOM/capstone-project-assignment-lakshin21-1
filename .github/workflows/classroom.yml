@@ -13,7 +13,6 @@ jobs:
     steps:
     - name: Checkout code      
       uses: actions/checkout@v4
-      
         
     - name: Backend List Teachers    
       id: backend-list-teachers
